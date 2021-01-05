@@ -10,8 +10,9 @@ import java.time.LocalDate;
 
 public class SystemDeveloperTest {
 
-    private SystemDeveloper testObject;
+    private SystemDeveloper testObject;         //Create a test object. Can only be used here
 
+    //Add a system developer to test object, before test methods
     @Before
     public void setup() {
         testObject = new SystemDeveloper();
@@ -29,7 +30,7 @@ public class SystemDeveloperTest {
 
     }
 
-
+    //Check if everything was added correctly
     @Test
     public void testObject_has_correct_fields() {
         //Assert.assertEquals(expectedName,actualName);
